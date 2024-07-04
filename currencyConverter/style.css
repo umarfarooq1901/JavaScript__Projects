@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f4e4ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.currency-main{
+    background-color: #fff;
+    height: 50vh;
+    width: 25vw;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.input{
+    margin-top: 2rem;
+  
+
+}
+
+#input-box{
+    border: none;
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 5vh;
+    border-radius: 0.5rem;
+    outline: none;
+    padding-left: 1rem;
+}
+.exchange-arrow{
+    font-size: 1.7rem;
+    margin-top: 1.4rem;
+}
+.text{
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+.select-box{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.select-container{
+    border: 1px solid lightgray;
+    display: flex;
+    border-radius: 0.5rem;
+    padding-left: 0.5rem;
+    
+
+   
+}
+select{
+    font-size: 1rem;
+    border: none;
+    padding-left: 0.5rem;
+    outline: none;
+}
+
+.select-container img{
+    width: 30%;
+}
+
+#button{
+    margin-top: 2rem;
+
+}
+
+#message{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#get-button{
+    background-color: #af4d98;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    
+}
+
+#get-button:hover{
+   background-color:purple;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .currency-main{
+        height: 40vh;
+        width: 80vw;
+      
+    }
+    .exchange-arrow{
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    #input-box{
+        height: 3vh;  
+    }
+
+ 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .currency-main{
+        height: 40vh;
+        width: 50vw;
+      
+    }
+    .exchange-arrow{
+        font-size: 1.8rem;
+      
+    }
+    #input-box{
+        height: 4vh;  
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .currency-main{
+        height: 47vh;
+        width: 50vw;
+      
+    }
+    .exchange-arrow{
+        font-size: 1.8rem;
+      
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .currency-main{
+        height: 50vh;
+        width: 40vw;
+      
+    }
+    .exchange-arrow{
+        font-size: 1.8rem;
+      
+    }
+    #input-box{
+        height: 5vh;  
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+    .currency-main{
+        height: 50vh;
+        width: 40vw;
+      
+    }
+    .exchange-arrow{
+        font-size: 1.8rem;
+      
+    }
+    #input-box{
+        height: 5vh;  
+    }
+}
+
+  
