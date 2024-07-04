@@ -118,7 +118,7 @@ select{
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .currency-main{
-        height: 52vh;
+        height: 60vh;
         width: 55vw;
       
     }
@@ -134,8 +134,8 @@ select{
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .currency-main{
-        height: 47vh;
-        width: 50vw;
+        height: 54vh;
+        width: 52vw;
       
     }
     .exchange-arrow{
