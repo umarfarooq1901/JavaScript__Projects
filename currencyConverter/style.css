@@ -54,8 +54,6 @@ body{
     display: flex;
     border-radius: 0.5rem;
     padding-left: 0.5rem;
-    
-
    
 }
 select{
@@ -100,31 +98,41 @@ select{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .currency-main{
-        height: 40vh;
-        width: 80vw;
+        height: 50vh;
+        width: 100vw;
       
     }
     .exchange-arrow{
         font-size: 1rem;
         margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+       
     }
     #input-box{
         height: 3vh;  
     }
-
+    
+#get-button{
+    padding: 0.8rem;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .currency-main{
-        height: 60vh;
-        width: 55vw;
+        height: 45vh;
+        width: 65vw;
       
     }
     .exchange-arrow{
-        font-size: 1.8rem;
-      
+        font-size: 1.2rem;
+        margin-top: 2rem;
     }
     #input-box{
         height: 4vh;  
@@ -134,12 +142,12 @@ select{
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .currency-main{
-        height: 54vh;
-        width: 52vw;
+        height: 45vh;
+        width: 60vw;
       
     }
     .exchange-arrow{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       
     }
 
@@ -148,8 +156,8 @@ select{
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .currency-main{
-        height: 50vh;
-        width: 40vw;
+        height: 45vh;
+        width: 50vw;
       
     }
     .exchange-arrow{
@@ -166,7 +174,7 @@ select{
     
     .currency-main{
         height: 50vh;
-        width: 40vw;
+        width: 50vw;
       
     }
     .exchange-arrow{
