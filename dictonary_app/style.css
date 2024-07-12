@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(20, 126, 106);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.sec-container{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: aliceblue;
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    overflow-y: scroll;
+}
+
+form{
+   margin-bottom: 2rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+form input{
+    width: 70%;
+    padding: 0.8rem;
+    border: none;
+    border-bottom: 3px solid rgb(31, 163, 139);
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+form input:focus {
+    border-bottom: 3px solid rgb(67, 164, 184);
+}
+
+#search-btn{
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    border: none;
+   
+    background-color: rgb(31, 163, 139);
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#search-btn:hover {
+    background-color: rgb(73, 153, 164);
+}
+
+.main-container{
+    padding: 1rem;
+}
+
+.show-div{
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.318);
+}
+
+.show-div h2 {
+    color: rgb(31, 163, 139);
+    margin-bottom: 0.5rem;
+}
+
+.show-div p {
+    margin: 0.5rem 0;
+}
+
+.show-div h3 {
+    margin-top: 1rem;
+    color: rgb(67, 164, 184);
+}
+.audio-btn{
+    float: right;
+    border: none;
+}
+
+@media (max-width: 600px) {
+    form input {
+        width: 60%;
+    }
+
+    #search-btn {
+        padding: 0.8rem 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #search-btn {
+        width: 100%;
+        padding: 0.8rem;
+    }
+}

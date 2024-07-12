@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="app.js" defer></script>   <!-- defer ensures JavaScript runs after HTML is loaded -->
+</head>
+<body>
+    <section class="sec-container">
+        <audio class="sound"></audio>
+        <div class="main-container">
+            <form id="dictionary-form" action="#">
+                <input type="text" id="search-input" placeholder="Enter a word to search">
+                <button type="submit" id="search-btn">Search</button>
+            </form>
+            <div id="result-container"></div>  <!-- Container for the results -->
+        </div>
+    </section>
+</body>
+</html>
