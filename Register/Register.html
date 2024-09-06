@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form id="registerForm" action="#">
+      <h2>Register</h2>
+      <div class="input-field">
+        <input type="text" id="fullName" required>
+        <label>Enter your full name</label>
+      </div>
+      <div class="input-field">
+        <input type="email" id="email" required>
+        <label>Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="password" required>
+        <label>Enter your password</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="confirmPassword" required>
+        <label>Confirm your password</label>
+      </div>
+
+      <button type="submit">Register</button>
+      <div class="register">
+        <p>Already have an account? <a href="login.html">Log In</a></p>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const registerForm = document.getElementById('registerForm');
+
+    registerForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const fullName = document.getElementById('fullName').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+
+      if (password !== confirmPassword) {
+        alert('Passwords do not match!');
+        return;
+      }
+
+      // Save registration details to localStorage
+      localStorage.setItem('fullName', fullName);
+      localStorage.setItem('email', email);
+      localStorage.setItem('password', password);
+
+      alert('Registration successful! You can now log in.');
+      window.location.href = 'login.html';
+    });
+  </script>
+</body>
+</html>
